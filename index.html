@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <style>
+            html,
+            body {
+                height: 100%;
+                width: 100%;
+            }
+
+            * {
+                margin: 0px;
+                padding: 0px;
+                font-size: 0;
+            }
+
+            div {
+                display: inline-block;
+                box-sizing: border-box;
+            }
+
+            .h25 {
+                width: 100%;
+                height: 25%;
+            }
+            .h33 {
+                width: 100%;
+                height: 33%;
+            }
+            .h50 {
+                width: 100%;
+                height: 50%;
+            }
+            .h67 {
+                width: 100%;
+                height: 67%;
+            }
+            .h75 {
+                width: 100%;
+                height: 75%;
+            }
+
+            .w25 {
+                width: 25%;
+                height: 100%;
+            }
+            .w33 {
+                width: 33%;
+                height: 100%;
+            }
+            .w50 {
+                width: 50%;
+                height: 100%;
+            }
+            .w67 {
+                width: 67%;
+                height: 100%;
+            }
+            .w75 {
+                width: 75%;
+                height: 100%;
+            }
+
+            .cell-top {
+                border-bottom: 5px solid black;
+            }
+            .cell-bottom {
+                border-top: 5px solid black;
+            }
+            .cell-left {
+                border-right: 5px solid black;
+            }
+            .cell-right {
+                border-left: 5px solid black;
+            }
+
+            .yellow {
+                background: yellow;
+            }
+            .red {
+                background: red;
+            }
+            .blue {
+                background: blue;
+            }
+            .black {
+                background: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="w75 cell-left">
+            <div class="w33 cell-left">
+                <div class="h50 cell-top">
+                    <div class="h25 cell-top"></div>
+                    <div class="h75 cell-bottom">
+                        <div class="h50 cell-top">
+                            <div class="w33 cell-left"></div>
+                            <div class="w67 cell-right yellow"></div>
+                        </div>
+                        <div class="h50 cell-bottom"></div>
+                    </div>
+                </div>
+                <div class="h50 cell-bottom">
+                    <div class="h50 cell-top blue"></div>
+                    <div class="h50 cell-bottom">
+                        <div class="h50 cell-top">
+                            <div class="w33 cell-left"></div>
+                            <div class="w67 cell-right"></div>
+                        </div>
+                        <div class="h50 cell-bottom"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="w67 cell-right">
+                <div class="h50 cell-top">
+                    <div class="h25 cell-top">
+                        <div class="w33 cell-left"></div>
+                        <div class="w67 cell-right"></div>
+                    </div>
+                    <div class="h75 cell-bottom red"></div>
+                </div>
+                <div class="h50 cell-bottom">
+                    <div class="w50 cell-left">
+                        <div class="h67 cell-top">
+                            <div class="h33 cell-top"></div>
+                            <div class="h67 cell-bottom black"></div>
+                        </div>
+                        <div class="h33 cell-bottom"></div>
+                    </div>
+                    <div class="w50 cell-right">
+                        <div class="h67 cell-top">
+                            <div class="h33 cell-top black"></div>
+                            <div class="h67 cell-bottom"></div>
+                        </div>
+                        <div class="h33 cell-bottom yellow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w25 cell-right">
+            <div class="h50 cell-top">
+                <div class="h25 cell-top"></div>
+                <div class="h75 cell-bottom">
+                    <div class="h50 cell-top">
+                        <div class="w67 cell-left blue"></div>
+                        <div class="w33 cell-right"></div>
+                    </div>
+                    <div class="h50 cell-bottom">
+                        <div class="w67 cell-left"></div>
+                        <div class="w33 cell-right"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="h50 cell-bottom">
+                <div class="h50 cell-top"></div>
+                <div class="h50 cell-bottom red"></div>
+            </div>
+        </div>
+    </body>
+</html>
